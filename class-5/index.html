@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 4</title>
+</head>
+<body>
+
+    <table border="2" cellPadding="10px">
+        
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Class</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="3">5</td>
+            </tr>
+        </tfoot>
+        
+        <tbody>
+            <tr>
+                <td>Shakib</td>
+                <td>23</td>
+                              <td>Eight</td>
+                <td>Good</td>
+            </tr>
+            <tr>
+                <td>Tamim</td>
+                <td>32</td>
+                <td>Nine</td>
+                <td>Best</td>
+            </tr>
+            <tr>
+                <td>ushfiq</td>
+                <td>32</td>
+                <td>Nine</td>
+                <td>Good</td>
+            </tr>
+            <tr>
+                <td>Rubel</td>
+                <td>32</td>
+                <td>Nine</td>
+                <td rowspan="2">Best</td>
+            </tr>
+            <tr>
+                <td>Rubel</td>       <td>32</td>
+                <td>Nine</td>
+
+            </tr>
+        </tbody>
+    
+    </table>
+    <br><br><br>
+
+    <form method="post" action="#"> 
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label for="userName">Name</label>
+            <input type="text" id="userName" required value="anis"> <br><br>
+            <label for="userEamil">Email</label>
+            <input type="email" id="userEamil" placeholder="type our Email"> <br><br>
+            <label for="userMobile">Mobile</label>
+            <input type="text" id="userMobile" required placeholder="type your mobile number"> <br><br>
+            <label for="userAge">Age</label>
+            <input type="number" id="userAge" min="5" max="150" > <br><br>
+            <label for="userAddress">Address</label>
+            <textarea name="userAddress" id="userAddress" cols="20" rows="10"></textarea><br> <br>
+            <label for="userImage">Photo</label>
+            <input type="file" name="userImage" id="userImage"> <br> <br>
+            <label for="userDivision">Division</label>
+            <select name="userDivision" id="userDivision" required>
+                <option value="">Select Division</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Chitagong">Chitagong</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Barishal">Barishal</option>
+                <option value="Shylet">Shylet</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Rongpur">Rongpur</option>
+                <option value="Mymmensing">Mymmensing</option>
+            </select>
+            <br><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male">
+            <span>male</span>
+            <input type="radio" name="gender" id="female">
+            <span>Female</span>
+            <br><br>
+            <label for="dob">Date Of Barth</label>
+            <input type="date" name="dob" id="dob">
+            <br><br>
+            <label for="password">Password(*)</label>
+            <input type="password" name="password" id="password" required> 
+            <br><br>
+            <!-- <button type="submit">Submit</button> -->
+            <input type="submit" value="Registration">
+            <input type="reset" value="Reset">
+
+            <br><br>
+        </fieldset>
+    </form>
+   
+</body>
+</html>
