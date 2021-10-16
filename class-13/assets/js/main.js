@@ -1,23 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 7</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-</head>
-
-<body>
-
-    <div>
-        <h1 id="test">Hello World</h1>
-    </div>
-
-    <script src="./assets/js/main.js"></script>
-    <script>
         // var, let, const
 
         let demo = document.getElementById('test');
@@ -39,10 +19,6 @@
        for(let i= 0; i < moreArray.length; i++){
             console.log(moreArray[i]);
        }
-
-
-
-
 
         //object
         let obj ={
@@ -74,7 +50,28 @@
         }
         console.log(func());
 
-    </script>
-</body>
-
-</html>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
