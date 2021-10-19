@@ -1,0 +1,21 @@
+/* Typography  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.btnColorRed{
+    color: red;
+    background-color: rgb(46, 24, 245);
+}
+
